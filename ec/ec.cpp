@@ -56,6 +56,7 @@ int main()
 	cout << endl;
 	cout << "字符串的长度为：" << length(s);
 	cout << endl;
+	cout << "完美";
 
 
 }
