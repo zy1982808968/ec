@@ -50,7 +50,7 @@ int main()
 {
 	SeqString s;
 	Init_String(s);
-	string x = { 'a','b','c','d','e','f','g','h','i','j', };
+	string x = "abcdefghij";
 	intString(s, x);
 	print(s);
 	cout << endl;
