@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 using namespace std;
+#include<string>
 #define max 100
 
 typedef struct
