@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="数组元素的倒置.cpp">
+    <ClCompile Include="ec.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
