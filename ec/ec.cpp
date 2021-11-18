@@ -1,7 +1,6 @@
 ﻿#include <iostream>
 using namespace std;
 #include<string>
-#include<vector>
 #define max 100
 
 typedef struct
@@ -145,7 +144,7 @@ int Sunday(SeqString &s, SeqString &t)
 
 	}
 
-	return m - i + 1;
+	return m-i +1;
 }
 
 
@@ -175,16 +174,18 @@ int main()
 	intString(t, v);
 	int next[100];
 	GetNext(t, next);
-	cout << StrIndex_kmp(s, t, 5, next);
+	cout << "BF算法的首次匹配的位置" << StrIndex_BF(s, t) << endl;;
+	cout << "kmp算法的首次匹配的位置" << StrIndex_kmp(s, t, 5, next) << endl;;
 	cout << endl;
 	int i = 1;
+	cout << "next数组的匹配:";
 	while (i < length(t) + 1)
 	{
 		cout << next[i] << "  ";
 		i++;
 	}
 	cout << endl;
-	cout << Sunday(s, t) << endl;
+	cout <<" sunday 算法返回首次匹配的位置"<< Sunday(s, t) << endl;
 	return 0;
 
 }
