@@ -1,6 +1,25 @@
 #include<iostream>
 using namespace std;
-int main() 
+void swap(int a, int  b)//值传递方式
+{
+	int temp;
+	temp = a;
+	a = b;
+	b = temp;
+}
+
+void swap1(int *a, int *b)
+{
+	int temp;
+	temp=*a ;
+	*a = *b;
+	*b = temp;
+
+
+}
+
+
+int main()
 {
 	//int a = 100;
 	//int *p;
@@ -20,10 +39,10 @@ int main()
 	//cout << *n;
 
 	//int *o = NULL;//16进制0~255是系统指针不能进行访问
-	int a = 10;
-	int b = 20;
+	/*int a = 10;
+	int b = 20;*/
 	//const int *p = &a;//常量指针
-	//*p = 20;//错误
+	//*p = 20;//错误  *p是解引用p指向的是数据域
 	//p = &b;//正确
 //	int * const p = &a;//指针常量 指针不可以改变 但值可以改变
 	//*p = 30;//正确
@@ -31,5 +50,28 @@ int main()
 	//const int * p = &a;//const及修饰指针又修饰常量
 	//*p = 20;//错误
 	//p=&b;//错误
+	//用指针访问数组
+	//int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	//int *p;
+	//p = arr;
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	cout << *p << "  ";//*p表示解引用的输出数组的值
+	//	p++;//因为是intx型的指针（占四个字节）所以指针每次加的是4
+
+
+	//}
+	int a = 10;
+	int b = 20;
+	swap(a, b);//按值传递并不改变实参
+	cout << "a=" << a<<endl;
+	cout << "b=" << b<<endl;
+
+	swap1(&a, &b);//安地址传递会修饰实参
+
+	cout << "a=" << a << endl;
+	cout << "b=" << b << endl;
+
+
 	return 0;
 }
