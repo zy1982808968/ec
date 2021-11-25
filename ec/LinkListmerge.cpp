@@ -54,7 +54,6 @@
 	int main()
 	{
 
-		stack<int> s;
 
 		//ListNode *kj=new ListNode();
 		//ListNode *r;

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ec.cpp">
+    <ClCompile Include="LinkListmerge.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
